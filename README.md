@@ -5,22 +5,24 @@ Integrity Guardian is a Windows app for verified backups, file recovery, and tra
 ## Download and install
 
 1. Open the [latest release](https://github.com/CapNCrunch1976/integrity-guardian-releases/releases/latest).
-2. Under **Assets**, download the file named `Integrity Guardian V4.4.0 Setup.exe`.
+2. Under **Assets**, download the file named `Integrity Guardian V4.5.0 Setup.exe`.
 3. Run Setup to install or upgrade Integrity Guardian. The same installer selects the x64 or x86 edition for your PC.
 4. Open **Integrity Guardian** from the Start menu. Choose a backup location, then add your source folders. To organize them by project or program, create a profile on the Main Menu first.
 
 ## What you can do
 
 - **Prepare** sets up an external drive for backups. It can use an existing volume, initialize an unpartitioned drive, or format an eligible volume as NTFS. It also supports verified overwriting of supported external HDDs and firmware block erase on eligible external NVMe drives. Availability depends on the drive, connection, and Windows support.
-- **Backup Profiles** organize backups by project, program, or personal collection. Browse to the profile on your backup drive from another PC. Each PC remembers its own working folders.
-- **Backup** creates a verified copy of your selected folders, with optional password-based encryption.
+- **Backup Profiles** organize backups by project, program, or personal collection. Browse a shared list of profile names on your backup drive. Each PC remembers its own working folders.
+- **Backup** saves or updates Latest and can save a dated copy at the same time. Choose **Dated Backup** to save a dated copy and leave Latest in place. Both actions verify the backup and support password-based encryption.
 - **Verify** checks an existing backup or exports a SHA-256 checksum for comparing archive copies without entering the backup password.
 - **Recovery** replaces a destination folder with the backup. It shows dated copies first and falls back to Latest for a source without dated copies.
 - **Transfer** shows what will be replaced, added, or kept before it updates a working folder. Files found only in the destination are kept.
 - **IG Explorer** lets you browse an archive and preview supported files before restoring them.
 - **Secure Deletion** permanently deletes selected backups, files, or folders and protects Windows system paths.
 
-Drive information appears beside the current backup location. It shows free space, available health information, and estimated SSD life if the drive reports wear.
+Drive information appears beside the current backup location. It shows the drive type Windows reports, such as NVMe SSD or SATA SSD, alongside free space, available health information, and estimated SSD life when wear data is available.
+
+Before starting a backup, **Estimated Backup Time** shows a range for each action based on the selected source folders and backup options.
 
 ## Backup file types
 
@@ -37,7 +39,7 @@ Integrity Guardian’s encryption design has not been independently reviewed. Us
 
 Open **Help → View User Guide in Integrity Guardian** for setup, backup, and recovery examples. Each GitHub release lists its changes. You can also find them in the app under **Help → Change Log**.
 
-Use **Help → Check for Updates** to find newer releases. Choose **Download Update** and run the downloaded Setup file when you are ready to upgrade. You can enable a check on startup in **File → Settings**.
+Enable startup update checks in **File → Settings**, or check manually from **Help → Check for Updates**. When a newer version is available, **Update Now** opens the official installer download. Run Setup to finish the update. **Skip This Update** dismisses startup reminders for that version.
 
 ## Publisher and legal notices
 
