@@ -23,7 +23,7 @@ Integrity Guardian is a Windows app for verified backups, file recovery, and tra
 
 Drive information appears beside the current backup location. It shows the drive type Windows reports, such as NVMe SSD or SATA SSD, alongside free space, available health information, and estimated SSD life when wear data is available.
 
-Before starting a backup, **Estimated Backup Time** shows a range for each action based on the selected source folders and backup options.
+Before starting a backup, **Estimated Backup Time** stays visible at the bottom of the Backup side pane and shows a range for each action based on the selected source folders and backup options.
 
 ## Backup file types
 
