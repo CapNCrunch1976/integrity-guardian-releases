@@ -5,7 +5,7 @@ Integrity Guardian is a Windows app for verified backups, file recovery, and tra
 ## Download and install
 
 1. Open the [latest release](https://github.com/CapNCrunch1976/integrity-guardian-releases/releases/latest).
-2. Under **Assets**, download the file named `Integrity Guardian Vx.y.z Setup.exe`.
+2. Under **Assets**, download the file named `Integrity Guardian V4.7.1 Setup.exe`.
 3. Run Setup to install or upgrade Integrity Guardian. The same installer selects the x64 or x86 edition for your PC.
 4. Open **Integrity Guardian** from the Start menu. Choose a backup location, then add your source folders. To organize them by project or program, create a profile on the Main Menu first.
 
