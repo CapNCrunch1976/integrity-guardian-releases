@@ -5,21 +5,22 @@ Integrity Guardian is a Windows app for verified backups, file recovery, and tra
 ## Download and install
 
 1. Open the [latest release](https://github.com/CapNCrunch1976/integrity-guardian-releases/releases/latest).
-2. Under **Assets**, download the file named `Integrity Guardian V4.3.0 Setup.exe`.
+2. Under **Assets**, download the file named `Integrity Guardian V4.4.0 Setup.exe`.
 3. Run Setup to install or upgrade Integrity Guardian. The same installer selects the x64 or x86 edition for your PC.
-4. Open **Integrity Guardian** from the Start menu. Choose a backup location, then add the folders you want to back up.
+4. Open **Integrity Guardian** from the Start menu. Choose a backup location, then add your source folders. To organize them by project or program, create a profile on the Main Menu first.
 
 ## What you can do
 
-- **Prepare** sets up an external USB drive for backups. It can use an existing volume, initialize an unpartitioned drive, or clear a supported magnetic hard drive with read-back verification of Windows-addressable sectors. For firmware sanitization, follow the drive manufacturer's procedure from the guidance in Prepare.
+- **Prepare** sets up an external drive for backups. It can use an existing volume, initialize an unpartitioned drive, or format an eligible volume as NTFS. It also supports verified overwriting of supported external HDDs and firmware block erase on eligible external NVMe drives. Availability depends on the drive, connection, and Windows support.
+- **Backup Profiles** organize backups by project, program, or personal collection. Browse to the profile on your backup drive from another PC. Each PC remembers its own working folders.
 - **Backup** creates a verified copy of your selected folders, with optional password-based encryption.
 - **Verify** checks an existing backup or exports a SHA-256 checksum for comparing archive copies without entering the backup password.
-- **Recovery** restores an entire backup to a destination folder and replaces that folder’s contents.
-- **Transfer** adds missing files and updates changed files while keeping files that exist only in the destination.
+- **Recovery** replaces a destination folder with the backup. It shows dated copies first and falls back to Latest for a source without dated copies.
+- **Transfer** shows what will be replaced, added, or kept before it updates a working folder. Files found only in the destination are kept.
 - **IG Explorer** lets you browse an archive and preview supported files before restoring them.
-- **Secure Deletion** permanently deletes selected backups, files, or folders.
+- **Secure Deletion** permanently deletes selected backups, files, or folders and protects Windows system paths.
 
-Open **Drive Details** next to the current backup location to see free space and any drive health information Windows reports.
+Drive information appears beside the current backup location. It shows free space, available health information, and estimated SSD life if the drive reports wear.
 
 ## Backup file types
 
