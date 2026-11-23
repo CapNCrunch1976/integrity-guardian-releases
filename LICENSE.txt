@@ -1,0 +1,8 @@
+Integrity Guardian Software License
+Copyright © 2026 Jeremy Mabrey. All rights reserved.
+
+Jeremy Mabrey grants you permission to download, install, and use Integrity Guardian at no charge for personal or business purposes. You may keep a copy of the installer for your own use.
+
+All other rights in the Integrity Guardian software and artwork are reserved. For redistribution or modification rights, obtain written permission from Jeremy Mabrey. This license does not limit rights provided by applicable law.
+
+Third-party components are licensed under their accompanying terms.
