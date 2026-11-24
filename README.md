@@ -1,4 +1,4 @@
-# Integrity Guardian V5.4.2
+# Integrity Guardian V5.5.0
 
 *Your Data. Intact. In Your Control.*
 
@@ -26,6 +26,8 @@ Start with one folder using **+ Add Folder/File**. Folder sources default to **O
 In **Profiles > Manage Profile**, move backups into another profile as Dated history, move the profile and its backups to another backup location, or permanently delete the profile and its backups. The receiving profile keeps its Latest backup. Integrity Guardian verifies moved copies before removing originals.
 
 From **Main Menu > Profile Management**, choose **Open Profiles** to create or browse for a profile. A selected profile opens on **General**, where you can choose and read about the default recovery action. In **Folders**, choose **Choose Another Folder** to set an alternate destination or **Use Original Location** to restore the default for a folder source. Existing destination mappings remain available. Select **Save profile** to apply your changes. If you leave with unsaved edits, Integrity Guardian asks whether to save, discard, or continue editing.
+
+In **Profiles > Folders**, type an extension such as `.tmp` or a wildcard such as `*.bak` and press **Enter**. Use **Browse** for a specific file or folder. The exclusions list sits below the input and shows page controls when needed. Select **Save profile** to apply the changes.
 
 When you add a shared or network file or folder to a profile, choose **Backup Only** if the profile should archive it and skip it during Recovery and Transfer. This also applies to scheduled transfers. **Backup Only** is available in **Profiles > Folders** for existing sources. A backup set created with this setting retains it. Clear the setting and create a new backup to enable profile recovery for that source.
 
@@ -55,11 +57,11 @@ The Main Menu shows the selected backup drive's capacity and free space, along w
 
 ## Installation and compatibility
 
-Download **Integrity.Guardian.V5.4.2.Setup.exe** from the [latest release](https://github.com/CapNCrunch1976/integrity-guardian-releases/releases/latest) and run it to install or upgrade. One installer selects x64 or x86. Open existing profiles and supported backups in V5. Use **Open individual backup** for a standalone backup. Create a profile backup in V5 to start using complete backup sets.
+Download **Integrity.Guardian.V5.5.0.Setup.exe** from the [latest release](https://github.com/CapNCrunch1976/integrity-guardian-releases/releases/latest) and run it to install or upgrade. One installer selects x64 or x86. Open existing profiles and supported backups in V5. Use **Open individual backup** for a standalone backup. Create a profile backup in V5 to start using complete backup sets.
 
 ## Help
 
-Open **Help > Help Document** or download the V5.4.2 Help PDF with the installer.
+Open **Help > Help Document** or download the V5.5.0 Help PDF with the installer.
 
 Use **Help > Get Release Notifications** to follow new releases on GitHub. **Report a Bug** and **Suggest an Improvement** open drafts you can review and submit on GitHub.
 
