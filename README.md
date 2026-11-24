@@ -1,4 +1,4 @@
-# Integrity Guardian V5.5.0
+# Integrity Guardian V5.5.1
 
 *Your Data. Intact. In Your Control.*
 
@@ -29,13 +29,13 @@ From **Main Menu > Profile Management**, choose **Open Profiles** to create or b
 
 In **Profiles > Folders**, type an extension such as `.tmp` or a wildcard such as `*.bak` and press **Enter**. Use **Browse** for a specific file or folder. The exclusions list sits below the input and shows page controls when needed. Select **Save profile** to apply the changes.
 
-When you add a shared or network file or folder to a profile, choose **Backup Only** if the profile should archive it and skip it during Recovery and Transfer. This also applies to scheduled transfers. **Backup Only** is available in **Profiles > Folders** for existing sources. A backup set created with this setting retains it. Clear the setting and create a new backup to enable profile recovery for that source.
+When you add a shared or network file or folder to a profile, choose **Backup Only** if the profile should archive it and skip it during Recovery and Transfer. This also applies to scheduled transfers. **Backup Only** is available in **Profiles > Folders** for existing sources. A backup set created with this setting retains it. Clear the setting and create a new backup to enable profile recovery for that source. To recover a Backup Only folder manually, choose **Open individual backup** in Recovery and select a drive or parent folder. Integrity Guardian creates the original top-level folder there. Use **New folder** in Browse if you want a new parent folder.
 
 Recovery and Transfer show a warning for mapped network drives, network folder paths, and folders Windows reports as shared. Review the affected paths and ask everyone to save and close their files before continuing.
 
 From Profile Settings, choose **Open Profile Backups** and select a backup. Enter its password if asked. IG Explorer shows its files and returns you to the same profile when you choose **Back to Profile**.
 
-The backup-storage location is separate from the recovery destinations. A drive can appear as `D:` at the office and `E:` at home. IG can recognize a remembered backup location when its drive letter changes. Use **Change Backup Location** or **Browse Profiles** if manual selection is needed. A different drive at the old letter is not silently accepted.
+Integrity Guardian keeps the profiles for each backup location together. Connect the backup drive on another PC and open Profiles to find its saved profiles. The backup-storage location is separate from the recovery destinations. A drive can appear as `D:` at the office and `E:` at home. IG can recognize a remembered backup location when its drive letter changes. Use **Change Backup Location** or **Browse Profiles** if manual selection is needed. A different drive at the old letter is not silently accepted.
 
 On opening, IG scans attached USB storage in the background for existing stores, profiles and recognized standalone archives. Scanning leaves the backups and profiles as they are. A valid current selection is preserved. A remembered or unique profile can be reconnected; ambiguous choices are shown for selection. Use **Scan USB Backups** on the Main Menu or Tools menu to rescan after connecting a drive. Startup discovery is enabled by default and can be changed in Settings. If the scan misses your location, use **Change Backup Location** to browse to it.
 
@@ -57,11 +57,11 @@ The Main Menu shows the selected backup drive's capacity and free space, along w
 
 ## Installation and compatibility
 
-Download **Integrity.Guardian.V5.5.0.Setup.exe** from the [latest release](https://github.com/CapNCrunch1976/integrity-guardian-releases/releases/latest) and run it to install or upgrade. One installer selects x64 or x86. Open existing profiles and supported backups in V5. Use **Open individual backup** for a standalone backup. Create a profile backup in V5 to start using complete backup sets.
+Download **Integrity.Guardian.V5.5.1.Setup.exe** from the [latest release](https://github.com/CapNCrunch1976/integrity-guardian-releases/releases/latest) and run it to install or upgrade. One installer selects x64 or x86. Open existing profiles and supported backups in V5. Use **Open individual backup** for a standalone backup. Create a profile backup in V5 to start using complete backup sets.
 
 ## Help
 
-Open **Help > Help Document** or download the V5.5.0 Help PDF with the installer.
+Open **Help > Help Document** or download the V5.5.1 Help PDF with the installer.
 
 Use **Help > Get Release Notifications** to follow new releases on GitHub. **Report a Bug** and **Suggest an Improvement** open drafts you can review and submit on GitHub.
 
