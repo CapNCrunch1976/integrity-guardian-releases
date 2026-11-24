@@ -1,4 +1,4 @@
-# Integrity Guardian V5.3.0
+# Integrity Guardian V5.4.0
 
 *Your Data. Intact. In Your Control.*
 
@@ -25,7 +25,7 @@ Start with one folder using **+ Add Folder/File**. Folder sources default to **O
 
 In **Profiles > Manage Profile**, move backups into another profile as Dated history, move the profile and its backups to another backup location, or permanently delete the profile and its backups. The receiving profile keeps its Latest backup. Integrity Guardian verifies moved copies before removing originals.
 
-**Profiles** opens on **General**, where you can choose and read about the default recovery action. In **Folders**, choose **Choose Another Folder** to set an alternate destination or **Use Original Location** to restore the default for a folder source. Existing destination mappings remain available. Select **Save profile** to apply your changes. If you leave with unsaved edits, Integrity Guardian asks whether to save, discard, or continue editing.
+From **Main Menu > Profile Management**, choose **Open Profiles** to create or browse for a profile. A selected profile opens on **General**, where you can choose and read about the default recovery action. In **Folders**, choose **Choose Another Folder** to set an alternate destination or **Use Original Location** to restore the default for a folder source. Existing destination mappings remain available. Select **Save profile** to apply your changes. If you leave with unsaved edits, Integrity Guardian asks whether to save, discard, or continue editing.
 
 When you add a shared or network file or folder to a profile, choose **Backup Only** if the profile should archive it and skip it during Recovery and Transfer. This also applies to scheduled transfers. **Backup Only** is available in **Profiles > Folders** for existing sources. A backup set created with this setting retains it. Clear the setting and create a new backup to enable profile recovery for that source.
 
@@ -35,11 +35,13 @@ From Profile Settings, choose **Open Profile Backups** and select a backup. Ente
 
 The backup-storage location is separate from the recovery destinations. A drive can appear as `D:` at the office and `E:` at home. IG can recognize a remembered backup location when its drive letter changes. Use **Change Backup Location** or **Browse Profiles** if manual selection is needed. A different drive at the old letter is not silently accepted.
 
-On opening, IG scans attached USB storage in the background for existing stores, profiles and recognized standalone archives. Scanning leaves the backups and profiles as they are. A valid current selection is preserved. A remembered or unique profile can be reconnected; ambiguous choices are shown for selection. Use **Scan USB backups** on the Main Menu or Tools menu to rescan after connecting a drive. Startup discovery is enabled by default and can be changed in Settings. If the scan misses your location, use **Change Backup Location** to browse to it.
+On opening, IG scans attached USB storage in the background for existing stores, profiles and recognized standalone archives. Scanning leaves the backups and profiles as they are. A valid current selection is preserved. A remembered or unique profile can be reconnected; ambiguous choices are shown for selection. Use **Scan USB Backups** on the Main Menu or Tools menu to rescan after connecting a drive. Startup discovery is enabled by default and can be changed in Settings. If the scan misses your location, use **Change Backup Location** to browse to it.
 
 Keep the entire IG backup folder together when moving it to another drive so complete sets remain available. You can also open a single backup and enter its password if prompted.
 
 ## Schedules
+
+With **No Profile** selected, open **Schedules** and add a folder or file under **Sources**. Choose the copies, days, and times, then select **Save Schedule**. Standalone schedules create unencrypted backups and keep their own saved source selection.
 
 Choose any combination of Monday through Sunday, including Monday/Wednesday/Friday, and one or more local times. A profile can schedule backups or transfers on the current PC while its Windows user is signed in. For an encrypted scheduled operation, enter the backup password for your Windows account on each PC where the schedule will run.
 
@@ -47,17 +49,17 @@ Existing schedules retain their unencrypted behavior until explicitly saved usin
 
 ## Interface and tools
 
-The sidebar lists Main Menu, Profiles, Backup, Recovery, Transfer, Schedules, Secure Deletion and History. Open **IG Explorer** or **Verify Backup** from **Tools**. **About** is next to **Help** on the menu bar. In **History**, choose **Clear History** to clear the local operation log. Choose **Export Logs and Clear** to save a text copy first. Choose an appearance theme or restart in Administrator Mode from **File > Settings**.
+The sidebar lists Main Menu, Profiles, Backup, Recovery, Transfer, Schedules, Secure Deletion and History. Open **IG Explorer** or **Verify Backup** from **Tools**. **About** is next to **Help** on the menu bar. In **History**, choose **Clear History** to clear the local operation log. Choose **Export Logs and Clear** to save a text copy first. In **File > Settings**, choose **Monterey** for cool gray surfaces, violet accents, and circular window controls. Monterey follows the Windows light or dark setting.
 
 The Main Menu shows the selected backup drive's capacity and free space, along with the manufacturer, model, drive status and estimated SSD life where reported. If Windows restricts access to a drive reading, restarting in Administrator Mode may show more information. Standard Mode is suitable for everyday backups and recovery.
 
 ## Installation and compatibility
 
-Download **Integrity.Guardian.V5.3.0.Setup.exe** from the [latest release](https://github.com/CapNCrunch1976/integrity-guardian-releases/releases/latest) and run it to install or upgrade. One installer selects x64 or x86. Open existing profiles and supported backups in V5. Use **Open individual backup** for a standalone backup. Create a profile backup in V5 to start using complete backup sets.
+Download **Integrity.Guardian.V5.4.0.Setup.exe** from the [latest release](https://github.com/CapNCrunch1976/integrity-guardian-releases/releases/latest) and run it to install or upgrade. One installer selects x64 or x86. Open existing profiles and supported backups in V5. Use **Open individual backup** for a standalone backup. Create a profile backup in V5 to start using complete backup sets.
 
 ## Help
 
-Open **Help > Help Document** or download the V5.3.0 Help PDF with the installer.
+Open **Help > Help Document** or download the V5.4.0 Help PDF with the installer.
 
 Use **Help > Get Release Notifications** to follow new releases on GitHub. **Report a Bug** and **Suggest an Improvement** open drafts you can review and submit on GitHub.
 
