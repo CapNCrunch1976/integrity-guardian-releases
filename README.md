@@ -1,4 +1,4 @@
-# Integrity Guardian V5.4.1
+# Integrity Guardian V5.4.2
 
 *Your Data. Intact. In Your Control.*
 
@@ -55,11 +55,11 @@ The Main Menu shows the selected backup drive's capacity and free space, along w
 
 ## Installation and compatibility
 
-Download **Integrity.Guardian.V5.4.1.Setup.exe** from the [latest release](https://github.com/CapNCrunch1976/integrity-guardian-releases/releases/latest) and run it to install or upgrade. One installer selects x64 or x86. Open existing profiles and supported backups in V5. Use **Open individual backup** for a standalone backup. Create a profile backup in V5 to start using complete backup sets.
+Download **Integrity.Guardian.V5.4.2.Setup.exe** from the [latest release](https://github.com/CapNCrunch1976/integrity-guardian-releases/releases/latest) and run it to install or upgrade. One installer selects x64 or x86. Open existing profiles and supported backups in V5. Use **Open individual backup** for a standalone backup. Create a profile backup in V5 to start using complete backup sets.
 
 ## Help
 
-Open **Help > Help Document** or download the V5.4.1 Help PDF with the installer.
+Open **Help > Help Document** or download the V5.4.2 Help PDF with the installer.
 
 Use **Help > Get Release Notifications** to follow new releases on GitHub. **Report a Bug** and **Suggest an Improvement** open drafts you can review and submit on GitHub.
 
