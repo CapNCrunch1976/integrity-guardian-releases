@@ -1,8 +1,8 @@
-# Integrity Guardian V5.0.2
+# Integrity Guardian V5.0.3
 
 *Your Data. Intact. In Your Control.*
 
-Integrity Guardian is a Windows application for verified backups, office-to-home transfers and recovery. V5 introduced the profile redesign. V5.0.2 adds destination browsing, fixes repeated profile saves, and simplifies Latest and Dated backup selection. One profile can define multiple folder or individual-file sources, protection options, exclusions and transfer/recovery destination folders.
+Integrity Guardian is a Windows application for verified backups, office-to-home transfers and recovery. V5 introduced the profile redesign. One profile can define multiple folder or individual-file sources, protection options, exclusions and transfer/recovery destination folders.
 
 ## Backup, transfer and restore
 
@@ -35,19 +35,19 @@ Existing schedules retain their unencrypted behavior until explicitly saved usin
 
 ## Interface and tools
 
-The sidebar provides Main Menu, Backup, Recovery, Transfer, Profiles, Schedules, IG Explorer, Secure Deletion, History, Settings and About. The original shield leads the header, with the new italic tagline. System, Light, Dark and Retro themes are available. Drive preparation, independent archive verification, log export, preview, legal notices and individual-archive recovery remain available.
+The sidebar provides Main Menu, Backup, Recovery, Transfer, Profiles, Schedules, IG Explorer, Secure Deletion, History, Settings and About. The original shield leads the header, with the new italic tagline. Choose System, Light, Dark or Retro in **File > Settings > Appearance**. Drive preparation, independent archive verification, log export, preview, legal notices and individual-archive recovery remain available.
 
 The Main Menu shows the selected backup drive's capacity and free space, with drive type, health and SSD life where Windows reports them.
 
 ## Installation and compatibility
 
-Download **Integrity.Guardian.V5.0.2.Setup.exe** from the [latest release](https://github.com/CapNCrunch1976/integrity-guardian-releases/releases/latest) and run it to install or upgrade. One installer selects x64 or x86. Open existing profiles and supported backups in V5. Use **Open individual backup** for a standalone backup. Create a profile backup in V5 to start using complete backup sets.
+Download **Integrity.Guardian.V5.0.3.Setup.exe** from the [latest release](https://github.com/CapNCrunch1976/integrity-guardian-releases/releases/latest) and run it to install or upgrade. One installer selects x64 or x86. Open existing profiles and supported backups in V5. Use **Open individual backup** for a standalone backup. Create a profile backup in V5 to start using complete backup sets.
 
 The main window needs a desktop work area of at least 1,024 × 768 at standard Windows scaling. This keeps the layout in view without rearranging menus or controls.
 
 ## Help
 
-Open **Help Document** in Settings or download the V5.0.2 Help PDF with the installer.
+Open **Help Document** in Settings or download the V5.0.3 Help PDF with the installer.
 
 Use **Help > Get Release Notifications** to follow new releases on GitHub. **Report a Bug** and **Suggest an Improvement** open drafts you can review and submit on GitHub.
 
