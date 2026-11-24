@@ -1,64 +1,54 @@
-# Integrity Guardian
+# Integrity Guardian V5.0.2
 
-Integrity Guardian is a Windows app for verified backups, file recovery, and transferring changes between PCs. This repository contains the official installers and release notes.
+*Your Data. Intact. In Your Control.*
 
-## Download and install
+Integrity Guardian is a Windows application for verified backups, office-to-home transfers and recovery. V5 introduced the profile redesign. V5.0.2 adds destination browsing, fixes repeated profile saves, and simplifies Latest and Dated backup selection. One profile can define multiple folder or individual-file sources, protection options, exclusions and transfer/recovery destination folders.
 
-1. Open the [latest release](https://github.com/CapNCrunch1976/integrity-guardian-releases/releases/latest).
-2. Under **Assets**, download the file named `Integrity Guardian V5.0.1 Setup.exe`.
-3. Run Setup to install or upgrade Integrity Guardian. The same installer selects the x64 or x86 edition for your PC.
-4. Open **Integrity Guardian** from the Start menu. Choose a backup location, then add your source folders. To organize them by project or program, create a profile on the Main Menu first.
+## Backup, transfer and restore
 
-## What you can do
+- **Backup:** create a complete profile backup set and choose whether it requires a password. Save Latest, Dated, or both. Every new archive is verified.
+- **Transfer:** add missing files, replace changed files according to the newer-file rule, and optionally delete destination-only files and folders.
+- **Restore Entire Backup:** replace each mapped destination folder with the selected set's contents. This overwrites matching files regardless of age and removes extra destination contents. It is not Windows or whole-system recovery.
+- **Review:** choose Latest to use the newest complete backup automatically or choose Dated and select its backup date and time. Inspect every source and destination before starting. Missing or replaced set members stop review. Destinations are processed in order; completed destinations remain completed if a later destination fails or cancellation occurs, and results identify them.
 
-- **Prepare** sets up an external drive for backups. It can use an existing volume, initialize an unpartitioned drive, or format an eligible volume as NTFS. It also supports verified overwriting of supported external HDDs and firmware block erase on eligible external NVMe drives. Availability depends on the drive, connection, and Windows support.
-- **Backup Profiles** organize backups by project, program, or personal collection. Browse a shared list of profile names on your backup drive. Each PC remembers its own working folders.
-- **Backup** verifies each new copy before replacing Latest. Choose **Dated Backup** to save a dated copy and leave Latest in place. Both actions can create encrypted backups using either IG encryption method.
-- **Scheduled Backups** runs unencrypted backups daily or on selected days and times while you are signed in to Windows. Choose Latest, Dated, or both. Missed runs are shown in the app and can be started with **Run Now**. Encrypted backup scheduling is in development.
-- **Verify** checks an existing backup or exports a SHA-256 checksum for comparing archive copies without entering the backup password.
-- **Recovery** replaces a destination folder with the backup. It prefers dated copies for each backup type. If copies for the selected source are still locked, unlock them before recovering.
-- **Transfer** shows what will be replaced, added, or kept before it updates a working folder. Files found only in the destination are kept.
-- **IG Explorer** lets you browse an archive and preview supported files before restoring them. When choosing an archive, **Date/Time** is shown first and backup files appear newest first.
-- **Secure Deletion** permanently deletes selected backups, files, or folders and protects Windows system paths.
+For new encrypted backups, use **IG Password Cipher**. Choose **IGEH-25519-512** when the backup needs to open in a compatible older version of IG.
 
-Drive information appears beside the current backup location. It shows the drive type Windows reports, such as NVMe SSD or SATA SSD, alongside free space, available health information, and estimated SSD life when wear data is available.
+Start with one folder. Use **+ Add Folder/File** to include additional locations. Choose **Browse Source** for the item to back up and **Browse Destination** for the folder that receives its files. You can also type a destination path for a drive or folder that is unavailable. A selected folder includes its files and subfolders, subject to exclusions. Contents go directly into the mapped destination, without an extra source-name folder. An individual-file source is represented by an archive containing that file; its mapped destination is still a folder and is the replacement boundary for Restore Entire Backup.
 
-Before starting a backup, **Estimated Backup Time** stays visible at the bottom of the Backup side pane and shows a range for each action based on the selected source folders and backup options.
+## Profiles and drive letters
 
-## Backup file types
+Profile Settings has General, Folders, Backup, Schedule, Transfer and Restore sections. In Folders, select an existing mapping and use **Browse Destination** to change its destination. Select **Save profile** to apply your changes. Transfer and Recovery show the saved mappings even before the first complete profile backup. Destination paths can be entered before their folder or drive exists; execution checks availability. Each Windows installation remembers its destination overrides.
 
-| Extension | How to open it |
-| --- | --- |
-| `.igbke` | Open the encrypted archive in Integrity Guardian with its backup password. |
-| `.igbk` | Open the unencrypted archive in Integrity Guardian without a password. |
+From Profile Settings, choose **Open Profile Backups** and select a backup. Enter its password if asked. IG Explorer shows its files and returns you to the same profile when you choose **Back to Profile**.
 
-Keep the password for each encrypted archive somewhere you can access during recovery.
+The backup-storage location is separate from the recovery destinations. A drive can appear as `D:` at the office and `E:` at home. IG can recognize a remembered backup location when its drive letter changes. Use **Change Backup Location** or **Browse Profiles** if manual selection is needed. A different drive at the old letter is not silently accepted.
 
-Each profile keeps separate Latest copies for every source folder and backup type. Manual and scheduled backups update the matching Latest copy when that option is selected. Scheduled backups are unencrypted.
+On opening, IG scans attached USB storage in the background for existing stores, profiles and recognized standalone archives. Scanning leaves the backups and profiles as they are. A valid current selection is preserved. A remembered or unique profile can be reconnected; ambiguous choices are shown for selection. Use **Scan USB backups** on the Main Menu or Tools menu to rescan after connecting a drive. Startup discovery is enabled by default and can be changed in Settings. If the scan misses your location, use **Change Backup Location** to browse to it.
 
-## Encrypted backup methods
+Keep the entire IG backup folder together when moving it to another drive so complete sets remain available. You can also open a single backup and enter its password if prompted.
 
-| Method | When to choose it | Recovery |
-| --- | --- | --- |
-| **IG Password Cipher** | Default for new encrypted backups. Uses fresh hardware-generated key material and a higher password derivation cost. | Requires Integrity Guardian V4.7.0 or later. |
-| **IGEH-25519-512** | Choose this when the backup needs to open on a PC running an earlier compatible version of IG. | Opens in V4.7.0 and earlier versions that support IGEH-25519-512. |
+## Schedules
 
-Both methods encrypt the files in an `.igbke` archive. Integrity Guardian detects the method automatically during recovery.
+Choose any combination of Monday through Sunday, including Monday/Wednesday/Friday, and one or more local times. A profile can schedule backups or transfers on the current PC while its Windows user is signed in. For an encrypted scheduled operation, enter the backup password for your Windows account on each PC where the schedule will run.
 
-An IG Password Cipher backup can include an existing IGEH-25519-512 archive. The included archive keeps its original password. Backup Review flags any IG Password Cipher archive selected for inclusion in an IGEH-25519-512 backup and stops that operation.
+Existing schedules retain their unencrypted behavior until explicitly saved using the new profile settings. Scheduled Transfer uses the most recent complete Latest set and the saved destination mappings. Restore Entire Backup is an explicit manual operation.
 
-Integrity Guardian’s encryption designs have not been independently reviewed. Use an approved, independently reviewed solution for sensitive, confidential, or regulated data.
+## Interface and tools
 
-## Help and release notes
+The sidebar provides Main Menu, Backup, Recovery, Transfer, Profiles, Schedules, IG Explorer, Secure Deletion, History, Settings and About. The original shield leads the header, with the new italic tagline. System, Light, Dark and Retro themes are available. Drive preparation, independent archive verification, log export, preview, legal notices and individual-archive recovery remain available.
 
-Choose **Help → Help Document** to locate the installed User Guide PDF in File Explorer. Each GitHub release lists its changes. You can also find them in the app under **Help → Change Log**.
+The Main Menu shows the selected backup drive's capacity and free space, with drive type, health and SSD life where Windows reports them.
 
-New settings check for updates at startup. You can change this in **File → Settings** or check manually from **Help → Check for Updates**. When a newer version is available, **Update Now** opens the official installer download. Run Setup to finish the update. **Skip This Update** dismisses startup reminders for that version.
+## Installation and compatibility
 
-## Publisher and legal notices
+Download **Integrity.Guardian.V5.0.2.Setup.exe** from the [latest release](https://github.com/CapNCrunch1976/integrity-guardian-releases/releases/latest) and run it to install or upgrade. One installer selects x64 or x86. Open existing profiles and supported backups in V5. Use **Open individual backup** for a standalone backup. Create a profile backup in V5 to start using complete backup sets.
 
-Copyright © 2026 Jeremy Mabrey. All rights reserved.
+The main window needs a desktop work area of at least 1,024 × 768 at standard Windows scaling. This keeps the layout in view without rearranging menus or controls.
 
-Integrity Guardian is available at no charge for personal and business use under the [Integrity Guardian Software License](LICENSE.txt).
+## Help
 
-See **Help → About Integrity Guardian → Legal Notices** for the combined PDF with copyright, third-party notices, and the Rust copyright and license inventory.
+Open **Help Document** in Settings or download the V5.0.2 Help PDF with the installer.
+
+Use **Help > Get Release Notifications** to follow new releases on GitHub. **Report a Bug** and **Suggest an Improvement** open drafts you can review and submit on GitHub.
+
+Integrity Guardian is available at no charge for personal and business use under the [Integrity Guardian Software License](LICENSE.txt). Open **Legal Notices** from About for licensing and attribution.
