@@ -1,4 +1,4 @@
-# Integrity Guardian V5.1.0
+# Integrity Guardian V5.1.1
 
 *Your Data. Intact. In Your Control.*
 
@@ -15,13 +15,13 @@ Open **Backup** to run a backup with or without a profile. If a profile is selec
 
 For new encrypted backups, use **IG Password Cipher**. Choose **IGEH-25519-512** when the backup needs to open in a compatible older version of IG.
 
-Start with one folder. Use **+ Add Folder/File** to include additional locations. Choose **Browse Source** for the item to back up and **Browse Destination** for the folder that receives its files. You can also type a destination path for a drive or folder that is unavailable. A selected folder includes its files and subfolders, subject to exclusions. Contents go directly into the mapped destination, without an extra source-name folder. An individual-file source is represented by an archive containing that file; its mapped destination is still a folder and is the replacement boundary for Restore Entire Backup.
+Start with one folder using **+ Add Folder/File**. Folder sources default to **Original location**, the source path recorded in the selected backup. Choose **Choose another folder** when you need a different destination on this PC. File sources require a destination folder before recovery. Restore Entire Backup replaces the contents of each destination folder, so review the paths before confirming.
 
 ## Profiles and drive letters
 
 In **Profiles > Manage Profile**, move backups into another profile as Dated history, move the profile and its backups to another backup location, or permanently delete the profile and its backups. The receiving profile keeps its Latest backup. Integrity Guardian verifies moved copies before removing originals.
 
-Profile Settings has General, Folders, Backup, Schedule, Transfer and Restore sections. In Folders, select an existing mapping and use **Browse Destination** to change its destination. Select **Save profile** to apply your changes. Transfer and Recovery show the saved mappings even before the first complete profile backup. Destination paths can be entered before their folder or drive exists; execution checks availability. Each Windows installation remembers its destination overrides.
+**Profiles** opens on **General**, where you can choose and read about the default recovery action. In **Folders**, choose **Choose Another Folder** to set an alternate destination or **Use Original Location** to restore the default for a folder source. Existing destination mappings remain available. Select **Save profile** to apply your changes. If you leave with unsaved edits, Integrity Guardian asks whether to save, discard, or continue editing.
 
 From Profile Settings, choose **Open Profile Backups** and select a backup. Enter its password if asked. IG Explorer shows its files and returns you to the same profile when you choose **Back to Profile**.
 
@@ -39,17 +39,17 @@ Existing schedules retain their unencrypted behavior until explicitly saved usin
 
 ## Interface and tools
 
-The sidebar provides Main Menu, Backup, Recovery, Transfer, Profiles, Schedules, IG Explorer, Secure Deletion, History, Settings and About. Choose System, Light, Dark or Retro under **File > Settings > Appearance**. Drive preparation, independent archive verification, log export, preview, legal notices and individual-archive recovery remain available.
+The sidebar lists Main Menu, Profiles, Backup, Recovery, Transfer, Schedules, Secure Deletion and History. Open **IG Explorer** or **Verify Backup** from **Tools**. **About** is next to **Help** on the menu bar. Choose an appearance theme or restart in Administrator Mode from **File > Settings**.
 
-The Main Menu shows the selected backup drive's capacity and free space, along with the manufacturer, model, drive status and estimated SSD life where reported.
+The Main Menu shows the selected backup drive's capacity and free space, along with the manufacturer, model, drive status and estimated SSD life where reported. If Windows restricts access to a drive reading, restarting in Administrator Mode may show more information. Standard Mode is suitable for everyday backups and recovery.
 
 ## Installation and compatibility
 
-Download **Integrity.Guardian.V5.1.0.Setup.exe** from the [latest release](https://github.com/CapNCrunch1976/integrity-guardian-releases/releases/latest) and run it to install or upgrade. One installer selects x64 or x86. Open existing profiles and supported backups in V5. Use **Open individual backup** for a standalone backup. Create a profile backup in V5 to start using complete backup sets.
+Download **Integrity.Guardian.V5.1.1.Setup.exe** from the [latest release](https://github.com/CapNCrunch1976/integrity-guardian-releases/releases/latest) and run it to install or upgrade. One installer selects x64 or x86. Open existing profiles and supported backups in V5. Use **Open individual backup** for a standalone backup. Create a profile backup in V5 to start using complete backup sets.
 
 ## Help
 
-Open **Help Document** in Settings or download the V5.1.0 Help PDF with the installer.
+Open **Help > Help Document** or download the V5.1.1 Help PDF with the installer.
 
 Use **Help > Get Release Notifications** to follow new releases on GitHub. **Report a Bug** and **Suggest an Improvement** open drafts you can review and submit on GitHub.
 
