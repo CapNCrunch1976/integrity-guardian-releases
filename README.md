@@ -1,4 +1,4 @@
-# Integrity Guardian V5.4.0
+# Integrity Guardian V5.4.1
 
 *Your Data. Intact. In Your Control.*
 
@@ -49,17 +49,17 @@ Existing schedules retain their unencrypted behavior until explicitly saved usin
 
 ## Interface and tools
 
-The sidebar lists Main Menu, Profiles, Backup, Recovery, Transfer, Schedules, Secure Deletion and History. Open **IG Explorer** or **Verify Backup** from **Tools**. **About** is next to **Help** on the menu bar. In **History**, choose **Clear History** to clear the local operation log. Choose **Export Logs and Clear** to save a text copy first. In **File > Settings**, choose **Monterey** for cool gray surfaces, violet accents, and circular window controls. Monterey follows the Windows light or dark setting.
+The sidebar lists Main Menu, Profiles, Backup, Recovery, Transfer, Schedules, Secure Deletion and History. Open **IG Explorer** or **Verify Backup** from **Tools**. **About** is next to **Help** on the menu bar. In **History**, choose **Clear History** to clear the local operation log. Choose **Export Logs and Clear** to save a text copy first. Under **File > Settings > Appearance**, choose **Monterey Light** or **Monterey Dark** for a fixed palette with circular window controls. Choose **System** to follow Windows.
 
 The Main Menu shows the selected backup drive's capacity and free space, along with the manufacturer, model, drive status and estimated SSD life where reported. If Windows restricts access to a drive reading, restarting in Administrator Mode may show more information. Standard Mode is suitable for everyday backups and recovery.
 
 ## Installation and compatibility
 
-Download **Integrity.Guardian.V5.4.0.Setup.exe** from the [latest release](https://github.com/CapNCrunch1976/integrity-guardian-releases/releases/latest) and run it to install or upgrade. One installer selects x64 or x86. Open existing profiles and supported backups in V5. Use **Open individual backup** for a standalone backup. Create a profile backup in V5 to start using complete backup sets.
+Download **Integrity.Guardian.V5.4.1.Setup.exe** from the [latest release](https://github.com/CapNCrunch1976/integrity-guardian-releases/releases/latest) and run it to install or upgrade. One installer selects x64 or x86. Open existing profiles and supported backups in V5. Use **Open individual backup** for a standalone backup. Create a profile backup in V5 to start using complete backup sets.
 
 ## Help
 
-Open **Help > Help Document** or download the V5.4.0 Help PDF with the installer.
+Open **Help > Help Document** or download the V5.4.1 Help PDF with the installer.
 
 Use **Help > Get Release Notifications** to follow new releases on GitHub. **Report a Bug** and **Suggest an Improvement** open drafts you can review and submit on GitHub.
 
