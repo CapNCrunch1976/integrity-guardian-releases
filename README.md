@@ -1,8 +1,12 @@
-# Integrity Guardian V5.5.1
+# Integrity Guardian V5.5.2
 
 *Your Data. Intact. In Your Control.*
 
 Integrity Guardian is a Windows application for verified backups, transfers and recovery. Back up files or folders directly, or save them in a profile with the settings and destinations you use regularly.
+
+## Prepare your backup drive
+
+Before saving your first Integrity Guardian backup to a drive, choose **Prepare a Drive > Use Existing Drive** and select the drive or folder. Integrity Guardian creates its backup folder and keeps the files already on the drive. From **Select a Backup Location**, you can also use **Browse > Use Backup Location**, then choose **Create Backup Folder** when asked. For a drive already prepared by Integrity Guardian, use **Browse** or **Scan** to select its existing backup location.
 
 ## Backup, transfer and restore
 
@@ -57,11 +61,11 @@ The Main Menu shows the selected backup drive's capacity and free space, along w
 
 ## Installation and compatibility
 
-Download **Integrity.Guardian.V5.5.1.Setup.exe** from the [latest release](https://github.com/CapNCrunch1976/integrity-guardian-releases/releases/latest) and run it to install or upgrade. One installer selects x64 or x86. Open existing profiles and supported backups in V5. Use **Open individual backup** for a standalone backup. Create a profile backup in V5 to start using complete backup sets.
+Download **Integrity.Guardian.V5.5.2.Setup.exe** from the [latest release](https://github.com/CapNCrunch1976/integrity-guardian-releases/releases/latest) and run it to install or upgrade. One installer selects x64 or x86. Open existing profiles and supported backups in V5. Use **Open individual backup** for a standalone backup. Create a profile backup in V5 to start using complete backup sets.
 
 ## Help
 
-Open **Help > Help Document** or download the V5.5.1 Help PDF with the installer.
+Open **Help > Help Document** or download the V5.5.2 Help PDF with the installer.
 
 Use **Help > Get Release Notifications** to follow new releases on GitHub. **Report a Bug** and **Suggest an Improvement** open drafts you can review and submit on GitHub.
 
