@@ -1,4 +1,4 @@
-# Integrity Guardian V5.6.0
+# Integrity Guardian V5.6.1
 
 *Your Data. Intact. In Your Control.*
 
@@ -13,8 +13,8 @@ Before saving your first Integrity Guardian backup to a drive, choose **Prepare 
 Open **Backup** to run a backup with or without a profile. If a profile is selected, choose **Back Up Without a Profile** to save a backup directly under the current backup location. Both choices support encrypted and unencrypted backups. Use a profile to keep source and destination mappings together for repeated backups, recovery, and transfer.
 
 - **Backup.** Save an encrypted or unencrypted copy of selected files and folders. Choose Latest, Dated, or both. Integrity Guardian verifies every new archive.
-- **Transfer:** add missing files, replace changed files according to the newer-file rule, and optionally delete destination-only files and folders.
-- **Restore Entire Backup:** replace each mapped destination folder with the selected set's contents. This overwrites matching files regardless of age and removes extra destination contents. It is not Windows or whole-system recovery.
+- **Transfer:** add missing files and folders. Transfer stops before replacing or removing existing items.
+- **Restore Entire Backup:** recover the selected backup to new or empty destination folders.
 - **Review:** choose Latest to use the newest complete backup automatically or choose Dated and select its backup date and time. Inspect every source and destination before starting. Missing or replaced set members stop review. Destinations are processed in order; completed destinations remain completed if a later destination fails or cancellation occurs, and results identify them.
 
 When you save both Latest and Dated copies, Integrity Guardian computes the archive checksum while copying it. This avoids reading the original archive again. Integrity Guardian still fully verifies the original archive and reads the Dated copy back to confirm it matches.
@@ -23,7 +23,7 @@ When you save both Latest and Dated copies, Integrity Guardian computes the arch
 
 For new encrypted backups, use **IG Password Cipher**. Choose **IGEH-25519-512** when the backup needs to open in a compatible older version of IG.
 
-Start with one folder using **+ Add Folder/File**. Folder sources default to **Original location**, the source path recorded in the selected backup. Choose **Choose another folder** when you need a different destination on this PC. File sources require a destination folder before recovery. Restore Entire Backup replaces the contents of each destination folder, so review the paths before confirming.
+Start with one folder using **+ Add Folder/File**. Folder sources default to **Original location**, the source path recorded in the selected backup. Choose **Choose another folder** when you need a different destination on this PC. File sources require a destination folder before recovery. Use a new or empty folder for each recovery destination and review the paths before confirming.
 
 ## Profiles and drive letters
 
@@ -33,13 +33,13 @@ From **Main Menu > Profile Management**, choose **Open Profiles** to create or b
 
 In **Profiles > Folders**, type an extension such as `.tmp` or a wildcard such as `*.bak` and press **Enter**. Use **Browse** for a specific file or folder. The exclusions list sits below the input and shows page controls when needed. Select **Save profile** to apply the changes.
 
-When you add a shared or network file or folder to a profile, choose **Backup Only** if the profile should archive it and skip it during Recovery and Transfer. This also applies to scheduled transfers. **Backup Only** is available in **Profiles > Folders** for existing sources. A backup set created with this setting retains it. Clear the setting and create a new backup to enable profile recovery for that source. To recover a Backup Only folder manually, choose **Open individual backup** in Recovery and select a drive or parent folder. Integrity Guardian creates the original top-level folder there. Use **New folder** in Browse if you want a new parent folder.
+When you add a shared or network file or folder to a profile, choose **Backup Only** if the profile should archive it and skip it during Recovery and Transfer. This also applies to scheduled transfers. **Backup Only** is available in **Profiles > Folders** for existing sources. A backup set created with this setting retains it. Clear the setting and create a new backup to enable profile recovery for that source.
 
 Recovery and Transfer show a warning for mapped network drives, network folder paths, and folders Windows reports as shared. Review the affected paths and ask everyone to save and close their files before continuing.
 
 From Profile Settings, choose **Open Profile Backups** and select a backup. Enter its password if asked. IG Explorer shows its files and returns you to the same profile when you choose **Back to Profile**.
 
-Integrity Guardian keeps the profiles for each backup location together. Connect the backup drive on another PC and open Profiles to find its saved profiles. The backup-storage location is separate from the recovery destinations. A drive can appear as `D:` at the office and `E:` at home. IG can recognize a remembered backup location when its drive letter changes. Use **Change Backup Location** or **Browse Profiles** if manual selection is needed. A different drive at the old letter is not silently accepted.
+The backup-storage location is separate from the recovery destinations. A drive can appear as `D:` at the office and `E:` at home. IG can recognize a remembered backup location when its drive letter changes. Use **Change Backup Location** or **Browse Profiles** if manual selection is needed. To reuse a profile on another PC, choose **Browse Profiles > Import from Backup** and review the paths after importing. A different drive at the old letter is not silently accepted.
 
 On opening, IG scans attached USB storage in the background for existing stores, profiles and recognized standalone archives. Scanning leaves the backups and profiles as they are. A valid current selection is preserved. A remembered or unique profile can be reconnected; ambiguous choices are shown for selection. Use **Scan USB Backups** on the Main Menu to rescan after connecting a drive. Startup discovery is enabled by default and can be changed in Settings. If the scan misses your location, use **Change Backup Location** to browse to it.
 
@@ -65,11 +65,11 @@ Use **Help > Report a Bug** to preview and optionally include technical diagnost
 
 ## Installation and compatibility
 
-Download **Integrity.Guardian.V5.6.0.Setup.exe** from the [latest release](https://github.com/CapNCrunch1976/integrity-guardian-releases/releases/latest) and run it to install or upgrade. One installer selects x64 or x86. Open existing profiles and supported backups in V5. Use **Open individual backup** for a standalone backup. Create a profile backup in V5 to start using complete backup sets.
+Download **Integrity.Guardian.V5.6.1.Setup.exe** from the [latest release](https://github.com/CapNCrunch1976/integrity-guardian-releases/releases/latest) and run it to install or upgrade. One installer selects x64 or x86. Open existing profiles and supported backups in V5. Use **Open individual backup** for a standalone backup. Create a profile backup in V5 to start using complete backup sets.
 
 ## Help
 
-Open **Help > Help Document** or download the V5.6.0 Help PDF with the installer.
+Open **Help > Help Document** or download the V5.6.1 Help PDF with the installer.
 
 Use **Help > Get Release Notifications** to follow new releases on GitHub. **Report a Bug** and **Suggest an Improvement** open drafts you can review and submit on GitHub.
 
