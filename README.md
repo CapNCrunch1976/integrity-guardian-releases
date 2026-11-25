@@ -1,4 +1,4 @@
-# Integrity Guardian V5.5.2
+# Integrity Guardian V5.6.0
 
 *Your Data. Intact. In Your Control.*
 
@@ -41,7 +41,7 @@ From Profile Settings, choose **Open Profile Backups** and select a backup. Ente
 
 Integrity Guardian keeps the profiles for each backup location together. Connect the backup drive on another PC and open Profiles to find its saved profiles. The backup-storage location is separate from the recovery destinations. A drive can appear as `D:` at the office and `E:` at home. IG can recognize a remembered backup location when its drive letter changes. Use **Change Backup Location** or **Browse Profiles** if manual selection is needed. A different drive at the old letter is not silently accepted.
 
-On opening, IG scans attached USB storage in the background for existing stores, profiles and recognized standalone archives. Scanning leaves the backups and profiles as they are. A valid current selection is preserved. A remembered or unique profile can be reconnected; ambiguous choices are shown for selection. Use **Scan USB Backups** on the Main Menu or Tools menu to rescan after connecting a drive. Startup discovery is enabled by default and can be changed in Settings. If the scan misses your location, use **Change Backup Location** to browse to it.
+On opening, IG scans attached USB storage in the background for existing stores, profiles and recognized standalone archives. Scanning leaves the backups and profiles as they are. A valid current selection is preserved. A remembered or unique profile can be reconnected; ambiguous choices are shown for selection. Use **Scan USB Backups** on the Main Menu to rescan after connecting a drive. Startup discovery is enabled by default and can be changed in Settings. If the scan misses your location, use **Change Backup Location** to browse to it.
 
 Keep the entire IG backup folder together when moving it to another drive so complete sets remain available. You can also open a single backup and enter its password if prompted.
 
@@ -53,19 +53,23 @@ Choose any combination of Monday through Sunday, including Monday/Wednesday/Frid
 
 Existing schedules retain their unencrypted behavior until explicitly saved using the new profile settings. Scheduled Transfer uses the most recent complete Latest set and the saved destination mappings. Restore Entire Backup is an explicit manual operation.
 
-## Interface and tools
+## Interface and diagnostics
 
-The sidebar lists Main Menu, Profiles, Backup, Recovery, Transfer, Schedules, Secure Deletion and History. Open **IG Explorer** or **Verify Backup** from **Tools**. **About** is next to **Help** on the menu bar. In **History**, choose **Clear History** to clear the local operation log. Choose **Export Logs and Clear** to save a text copy first. Under **File > Settings > Appearance**, choose **Monterey Light** or **Monterey Dark** for a fixed palette with circular window controls. Choose **System** to follow Windows.
+The sidebar lists Main Menu, Profiles, Backup, Recovery, Transfer, Schedules, Secure Deletion and History. In **Recovery** or **Transfer**, choose a backup and use **View Contents** to open IG Explorer in the app or **Verify Backup** to validate the archive. Individual Recovery shows a **Destination Preview** before recovery starts. **About** is next to **Help** on the menu bar. In **History**, choose **Clear History** to clear the local operation log. Choose **Export Logs and Clear** to save a text copy first. Clearing History leaves the separate local diagnostic log available. Under **File > Settings > Appearance**, choose **Monterey Light** or **Monterey Dark** for a fixed palette with circular window controls. Choose **System** to follow Windows.
 
 The Main Menu shows the selected backup drive's capacity and free space, along with the manufacturer, model, drive status and estimated SSD life where reported. If Windows restricts access to a drive reading, restarting in Administrator Mode may show more information. Standard Mode is suitable for everyday backups and recovery.
 
+File and folder browsers hide hidden and protected Windows items by default. Choose **Show hidden files and folders** to inspect protected entries. Protected items remain unavailable for selection.
+
+Use **Help > Report a Bug** to preview and optionally include technical diagnostics before opening a GitHub draft. Diagnostics are collected locally and exclude passwords, file paths, and backup contents.
+
 ## Installation and compatibility
 
-Download **Integrity.Guardian.V5.5.2.Setup.exe** from the [latest release](https://github.com/CapNCrunch1976/integrity-guardian-releases/releases/latest) and run it to install or upgrade. One installer selects x64 or x86. Open existing profiles and supported backups in V5. Use **Open individual backup** for a standalone backup. Create a profile backup in V5 to start using complete backup sets.
+Download **Integrity.Guardian.V5.6.0.Setup.exe** from the [latest release](https://github.com/CapNCrunch1976/integrity-guardian-releases/releases/latest) and run it to install or upgrade. One installer selects x64 or x86. Open existing profiles and supported backups in V5. Use **Open individual backup** for a standalone backup. Create a profile backup in V5 to start using complete backup sets.
 
 ## Help
 
-Open **Help > Help Document** or download the V5.5.2 Help PDF with the installer.
+Open **Help > Help Document** or download the V5.6.0 Help PDF with the installer.
 
 Use **Help > Get Release Notifications** to follow new releases on GitHub. **Report a Bug** and **Suggest an Improvement** open drafts you can review and submit on GitHub.
 
